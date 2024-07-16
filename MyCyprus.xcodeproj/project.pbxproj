@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D68391A2C46906400544751 /* CatalogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6839192C46906400544751 /* CatalogCell.swift */; };
+		5D68391D2C4690A700544751 /* UICollectionView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D68391C2C4690A700544751 /* UICollectionView + Extension.swift */; };
+		5D6839202C46A2C900544751 /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D68391F2C46A2C900544751 /* Sizes.swift */; };
+		5D6839222C46A34F00544751 /* CatalogBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6839212C46A34F00544751 /* CatalogBuilder.swift */; };
+		5D6839242C46A45300544751 /* CatalogInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6839232C46A45300544751 /* CatalogInteractor.swift */; };
+		5D6839262C46A47300544751 /* CatalogPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6839252C46A47300544751 /* CatalogPresenter.swift */; };
+		5D6839282C46A6D300544751 /* MyCyprusNetworker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6839272C46A6D300544751 /* MyCyprusNetworker.swift */; };
+		5D68392A2C46AC5D00544751 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6839292C46AC5D00544751 /* Api.swift */; };
+		5D68392D2C46BF0100544751 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D68392C2C46BF0100544751 /* NetworkError.swift */; };
+		5D6839302C46BF4200544751 /* MyCyprusRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D68392F2C46BF4200544751 /* MyCyprusRequest.swift */; };
+		5D6839322C46BF6D00544751 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6839312C46BF6D00544751 /* Models.swift */; };
+		5D6BF18A2C47EAF20055CB62 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BF1892C47EAF20055CB62 /* DetailsViewController.swift */; };
+		5D6BF18C2C4802B30055CB62 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BF18B2C4802B30055CB62 /* StarRatingView.swift */; };
+		5D6BF18E2C481E1F0055CB62 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BF18D2C481E1F0055CB62 /* DetailsInteractor.swift */; };
+		5D6BF1902C481E660055CB62 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BF18F2C481E660055CB62 /* DetailsPresenter.swift */; };
+		5D6BF1922C481E970055CB62 /* DetailsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BF1912C481E970055CB62 /* DetailsBuilder.swift */; };
+		5D9851632C4E5C8A007CCF90 /* FailedLikingAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9851622C4E5C8A007CCF90 /* FailedLikingAlert.swift */; };
+		5D9851652C4E6CEC007CCF90 /* LikeBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9851642C4E6CEC007CCF90 /* LikeBarButton.swift */; };
+		5D9851672C4EAE35007CCF90 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9851662C4EAE35007CCF90 /* Colors.swift */; };
+		5DAFAB232C467C91006A4FD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAFAB222C467C91006A4FD3 /* AppDelegate.swift */; };
+		5DAFAB252C467C91006A4FD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAFAB242C467C91006A4FD3 /* SceneDelegate.swift */; };
+		5DAFAB272C467C91006A4FD3 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAFAB262C467C91006A4FD3 /* CatalogViewController.swift */; };
+		5DAFAB2C2C467C92006A4FD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DAFAB2B2C467C92006A4FD3 /* Assets.xcassets */; };
+		5DAFAB2F2C467C92006A4FD3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5DAFAB2E2C467C92006A4FD3 /* Base */; };
+		5DC7C11F2C4931CF00A19EE4 /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7C11E2C4931CF00A19EE4 /* DetailsCell.swift */; };
+		86C1AA2979C31EBF21174ABD /* Pods_MyCyprus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB941243B57AD3F75396D1D2 /* Pods_MyCyprus.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D6839192C46906400544751 /* CatalogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCell.swift; sourceTree = "<group>"; };
+		5D68391C2C4690A700544751 /* UICollectionView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + Extension.swift"; sourceTree = "<group>"; };
+		5D68391F2C46A2C900544751 /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		5D6839212C46A34F00544751 /* CatalogBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogBuilder.swift; sourceTree = "<group>"; };
+		5D6839232C46A45300544751 /* CatalogInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogInteractor.swift; sourceTree = "<group>"; };
+		5D6839252C46A47300544751 /* CatalogPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogPresenter.swift; sourceTree = "<group>"; };
+		5D6839272C46A6D300544751 /* MyCyprusNetworker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCyprusNetworker.swift; sourceTree = "<group>"; };
+		5D6839292C46AC5D00544751 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		5D68392C2C46BF0100544751 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		5D68392F2C46BF4200544751 /* MyCyprusRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCyprusRequest.swift; sourceTree = "<group>"; };
+		5D6839312C46BF6D00544751 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		5D6BF1892C47EAF20055CB62 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		5D6BF18B2C4802B30055CB62 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
+		5D6BF18D2C481E1F0055CB62 /* DetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
+		5D6BF18F2C481E660055CB62 /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		5D6BF1912C481E970055CB62 /* DetailsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsBuilder.swift; sourceTree = "<group>"; };
+		5D9851622C4E5C8A007CCF90 /* FailedLikingAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailedLikingAlert.swift; sourceTree = "<group>"; };
+		5D9851642C4E6CEC007CCF90 /* LikeBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeBarButton.swift; sourceTree = "<group>"; };
+		5D9851662C4EAE35007CCF90 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5DAFAB1F2C467C91006A4FD3 /* MyCyprus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCyprus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DAFAB222C467C91006A4FD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DAFAB242C467C91006A4FD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5DAFAB262C467C91006A4FD3 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
+		5DAFAB2B2C467C92006A4FD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DAFAB2E2C467C92006A4FD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DAFAB302C467C92006A4FD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DC7C11E2C4931CF00A19EE4 /* DetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCell.swift; sourceTree = "<group>"; };
+		BDC2DE78E73EF55821768F8D /* Pods-MyCyprus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCyprus.debug.xcconfig"; path = "Target Support Files/Pods-MyCyprus/Pods-MyCyprus.debug.xcconfig"; sourceTree = "<group>"; };
+		CB941243B57AD3F75396D1D2 /* Pods_MyCyprus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCyprus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEEA7596AD0272D263538B51 /* Pods-MyCyprus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCyprus.release.xcconfig"; path = "Target Support Files/Pods-MyCyprus/Pods-MyCyprus.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DAFAB1C2C467C91006A4FD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86C1AA2979C31EBF21174ABD /* Pods_MyCyprus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D6839182C468FD600544751 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5D6BF1872C47EACF0055CB62 /* Catalog */,
+				5D6BF1882C47EAD70055CB62 /* Details */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5D68391B2C46908B00544751 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5D68391C2C4690A700544751 /* UICollectionView + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5D68391E2C46A2B200544751 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5D68391F2C46A2C900544751 /* Sizes.swift */,
+				5D9851662C4EAE35007CCF90 /* Colors.swift */,
+				5D9851622C4E5C8A007CCF90 /* FailedLikingAlert.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5D68392B2C46BEF000544751 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5D6839312C46BF6D00544751 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5D68392E2C46BF2000544751 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5D6839292C46AC5D00544751 /* Api.swift */,
+				5D68392C2C46BF0100544751 /* NetworkError.swift */,
+				5D68392F2C46BF4200544751 /* MyCyprusRequest.swift */,
+				5D6839272C46A6D300544751 /* MyCyprusNetworker.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5D6BF1872C47EACF0055CB62 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				5DAFAB262C467C91006A4FD3 /* CatalogViewController.swift */,
+				5D6839232C46A45300544751 /* CatalogInteractor.swift */,
+				5D6839252C46A47300544751 /* CatalogPresenter.swift */,
+				5D6839212C46A34F00544751 /* CatalogBuilder.swift */,
+				5D6839192C46906400544751 /* CatalogCell.swift */,
+				5D9851642C4E6CEC007CCF90 /* LikeBarButton.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		5D6BF1882C47EAD70055CB62 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				5D6BF1892C47EAF20055CB62 /* DetailsViewController.swift */,
+				5D6BF18D2C481E1F0055CB62 /* DetailsInteractor.swift */,
+				5D6BF18F2C481E660055CB62 /* DetailsPresenter.swift */,
+				5D6BF1912C481E970055CB62 /* DetailsBuilder.swift */,
+				5D6BF18B2C4802B30055CB62 /* StarRatingView.swift */,
+				5DC7C11E2C4931CF00A19EE4 /* DetailsCell.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		5DAFAB162C467C91006A4FD3 = {
+			isa = PBXGroup;
+			children = (
+				5DAFAB212C467C91006A4FD3 /* MyCyprus */,
+				5DAFAB202C467C91006A4FD3 /* Products */,
+				C832D0774E64743D1C93EA8C /* Pods */,
+				B89F3B648B844584B7F5989B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5DAFAB202C467C91006A4FD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DAFAB1F2C467C91006A4FD3 /* MyCyprus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DAFAB212C467C91006A4FD3 /* MyCyprus */ = {
+			isa = PBXGroup;
+			children = (
+				5D68392E2C46BF2000544751 /* Networking */,
+				5D68392B2C46BEF000544751 /* Models */,
+				5DAFAB362C467D37006A4FD3 /* App */,
+				5DAFAB372C467D6C006A4FD3 /* Resources */,
+				5DAFAB382C467D75006A4FD3 /* Storyboards */,
+				5D6839182C468FD600544751 /* Modules */,
+				5D68391E2C46A2B200544751 /* Common */,
+				5D68391B2C46908B00544751 /* Extensions */,
+				5DAFAB302C467C92006A4FD3 /* Info.plist */,
+			);
+			path = MyCyprus;
+			sourceTree = "<group>";
+		};
+		5DAFAB362C467D37006A4FD3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5DAFAB222C467C91006A4FD3 /* AppDelegate.swift */,
+				5DAFAB242C467C91006A4FD3 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5DAFAB372C467D6C006A4FD3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5DAFAB2B2C467C92006A4FD3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5DAFAB382C467D75006A4FD3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5DAFAB2D2C467C92006A4FD3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B89F3B648B844584B7F5989B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB941243B57AD3F75396D1D2 /* Pods_MyCyprus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C832D0774E64743D1C93EA8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDC2DE78E73EF55821768F8D /* Pods-MyCyprus.debug.xcconfig */,
+				EEEA7596AD0272D263538B51 /* Pods-MyCyprus.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DAFAB1E2C467C91006A4FD3 /* MyCyprus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DAFAB332C467C92006A4FD3 /* Build configuration list for PBXNativeTarget "MyCyprus" */;
+			buildPhases = (
+				588D7513AB067D338E9DF861 /* [CP] Check Pods Manifest.lock */,
+				5DAFAB1B2C467C91006A4FD3 /* Sources */,
+				5D6839172C46883100544751 /* SwiftLint */,
+				5DAFAB1C2C467C91006A4FD3 /* Frameworks */,
+				5DAFAB1D2C467C91006A4FD3 /* Resources */,
+				D4ADF36A0D2213AB938E4CE9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCyprus;
+			productName = MyCyprus;
+			productReference = 5DAFAB1F2C467C91006A4FD3 /* MyCyprus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DAFAB172C467C91006A4FD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					5DAFAB1E2C467C91006A4FD3 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 5DAFAB1A2C467C91006A4FD3 /* Build configuration list for PBXProject "MyCyprus" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DAFAB162C467C91006A4FD3;
+			productRefGroup = 5DAFAB202C467C91006A4FD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DAFAB1E2C467C91006A4FD3 /* MyCyprus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DAFAB1D2C467C91006A4FD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DAFAB2C2C467C92006A4FD3 /* Assets.xcassets in Resources */,
+				5DAFAB2F2C467C92006A4FD3 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		588D7513AB067D338E9DF861 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyCyprus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D6839172C46883100544751 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		D4ADF36A0D2213AB938E4CE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCyprus/Pods-MyCyprus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCyprus/Pods-MyCyprus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyCyprus/Pods-MyCyprus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DAFAB1B2C467C91006A4FD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DC7C11F2C4931CF00A19EE4 /* DetailsCell.swift in Sources */,
+				5D6839242C46A45300544751 /* CatalogInteractor.swift in Sources */,
+				5D6BF1922C481E970055CB62 /* DetailsBuilder.swift in Sources */,
+				5D6839202C46A2C900544751 /* Sizes.swift in Sources */,
+				5D68391D2C4690A700544751 /* UICollectionView + Extension.swift in Sources */,
+				5DAFAB272C467C91006A4FD3 /* CatalogViewController.swift in Sources */,
+				5D6BF18E2C481E1F0055CB62 /* DetailsInteractor.swift in Sources */,
+				5D6839302C46BF4200544751 /* MyCyprusRequest.swift in Sources */,
+				5DAFAB232C467C91006A4FD3 /* AppDelegate.swift in Sources */,
+				5D68392A2C46AC5D00544751 /* Api.swift in Sources */,
+				5DAFAB252C467C91006A4FD3 /* SceneDelegate.swift in Sources */,
+				5D6839222C46A34F00544751 /* CatalogBuilder.swift in Sources */,
+				5D6BF18C2C4802B30055CB62 /* StarRatingView.swift in Sources */,
+				5D9851672C4EAE35007CCF90 /* Colors.swift in Sources */,
+				5D6839282C46A6D300544751 /* MyCyprusNetworker.swift in Sources */,
+				5D9851652C4E6CEC007CCF90 /* LikeBarButton.swift in Sources */,
+				5D68392D2C46BF0100544751 /* NetworkError.swift in Sources */,
+				5D68391A2C46906400544751 /* CatalogCell.swift in Sources */,
+				5D6839262C46A47300544751 /* CatalogPresenter.swift in Sources */,
+				5D6839322C46BF6D00544751 /* Models.swift in Sources */,
+				5D9851632C4E5C8A007CCF90 /* FailedLikingAlert.swift in Sources */,
+				5D6BF18A2C47EAF20055CB62 /* DetailsViewController.swift in Sources */,
+				5D6BF1902C481E660055CB62 /* DetailsPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5DAFAB2D2C467C92006A4FD3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DAFAB2E2C467C92006A4FD3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DAFAB312C467C92006A4FD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5DAFAB322C467C92006A4FD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DAFAB342C467C92006A4FD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDC2DE78E73EF55821768F8D /* Pods-MyCyprus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U54N9MV9TR;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyCyprus/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = EgorK.MyCyprus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5DAFAB352C467C92006A4FD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEEA7596AD0272D263538B51 /* Pods-MyCyprus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U54N9MV9TR;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyCyprus/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = EgorK.MyCyprus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DAFAB1A2C467C91006A4FD3 /* Build configuration list for PBXProject "MyCyprus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DAFAB312C467C92006A4FD3 /* Debug */,
+				5DAFAB322C467C92006A4FD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DAFAB332C467C92006A4FD3 /* Build configuration list for PBXNativeTarget "MyCyprus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DAFAB342C467C92006A4FD3 /* Debug */,
+				5DAFAB352C467C92006A4FD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DAFAB172C467C91006A4FD3 /* Project object */;
+}
